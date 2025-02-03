@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link data-default-icon="https://play-lh.googleusercontent.com/ZHqHz0KEWJZoIpvp4J4zQ84ih0htt25-NY4itOQQH6Q3uc9TUCzB2pUcj1Xqd31_1AQ" rel="icon" size="192x192"
+    href="https://play-lh.googleusercontent.com/ZHqHz0KEWJZoIpvp4J4zQ84ih0htt25-NY4itOQQH6Q3uc9TUCzB2pUcj1Xqd31_1AQ"/>
+    <script src="https://kit.fontawesome.com/104e3c8c86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input id="screen" readonly>
+        <div id="keys">
+            <button id="operation" onclick="appendtodisplay('+')">+</button>
+            <button onclick="appendtodisplay('7')">7</button>
+            <button onclick="appendtodisplay('8')">8</button>
+            <button onclick="appendtodisplay('9')">9</button>
+            <button id="operation" onclick="appendtodisplay('-')">-</button>
+            <button onclick="appendtodisplay('4')">4</button>
+            <button onclick="appendtodisplay('5')">5</button>
+            <button onclick="appendtodisplay('6')">6</button>
+            <button id="operation" onclick="appendtodisplay('*')">*</button>
+            <button onclick="appendtodisplay('1')">1</button>
+            <button onclick="appendtodisplay('2')">2</button>
+            <button onclick="appendtodisplay('3')">3</button>
+            <button id="operation" onclick="appendtodisplay('/')">/</button>
+            <button onclick="appendtodisplay('0')">0</button>
+            <button onclick="appendtodisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button id="operation" onclick="clearDisplay()">C</button>
+            <button id="operation" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button>
+
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
